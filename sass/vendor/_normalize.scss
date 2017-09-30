@@ -1,4 +1,3 @@
-@import url("https://fonts.googleapis.com/css?family=Roboto");
 /*! normalize.css v5.0.0 | MIT License | github.com/necolas/normalize.css */
 /**
  * 1. Change the default font family in all browsers (opinionated).
@@ -9,8 +8,7 @@
 /* Document
    ========================================================================== */
 html {
-  font-family: "Roboto", sans-serif;
-  font-weight: 400;
+  @include font($font-normal);
   line-height: 1.6;
   /* 2 */
   -ms-text-size-adjust: 100%;
@@ -449,9 +447,4 @@ template {
  */
 [hidden] {
   display: none;
-}
-
-*, *::before, *::after {
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
 }
